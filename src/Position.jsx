@@ -23,7 +23,7 @@ const Position = () => {
         setMouseOut(!mouseOut);
     }
     return (
-        <div>
+        <div className="container">
             <div className={`tooltip ${enterMouse ? "active" : mouseOut}`}>This is Top Tooltip</div>
             <button className="tooltip-btn" 
             onMouseEnter={() => setEnterMouse(onMouseTop)}
@@ -39,7 +39,7 @@ const Position = () => {
             <div className={`tooltip_right ${enterMouseRight ? "active" : mouseOut}`}>This is Right Tooltip</div>
             <button className="tooltip_btn_right" 
             onMouseEnter={() => setEnterMouseRight(onMouseRight)}
-            onMouseLeave={() => setEnterMouse(onMouseOut)}
+            onMouseLeave={() => setEnterMouseRight(onMouseOut)}
             >Click me to see Tooltip</button>
 
             <div className={`tooltip_bottom ${enterMouseBottom ? "active" : mouseOut}`}>This is Bottom Tooltip</div>
