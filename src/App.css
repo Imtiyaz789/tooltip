@@ -1,38 +1,117 @@
-.App {
+.tooltip-btn{
   text-align: center;
+  position: absolute;
+  right: 50%;
+  top: 20%;
+  color: black;
+  background-color: aqua;
+  background-image: linear-gradient(to right, skyblue, lightgreen, yellow);
+  outline: none;
+  border: none;
+  border-bottom: 2px dashed black;
+}
+.tooltip-btn:hover{
+  cursor: pointer;
+  /* transform: translate(3px, 2px); */
+}
+.tooltip{
+  text-align: center;
+  position: absolute;
+  right: 55%;
+  top: 10%;
+  border: 3px solid red;
+  visibility: hidden;
+}
+.tooltip.active{
+  visibility: visible;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Left Button */
+.tooltip_left{
+  text-align: center;
+  position: absolute;
+  right: 80%;
+  top: 25%;
+  border: 3px solid blue;
+  visibility: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tooltip_left.active{
+  visibility: visible;
+}
+.tooltip_btn_left{
+  text-align: center;
+  position: absolute;
+  right: 75%;
+  top: 30%;
+  color: black;
+  background-color: aqua;
+  background-image: linear-gradient(to right, skyblue, lightgreen, yellow);
+  outline: none;
+  border: none;
+  border-bottom: 2px dashed black;
+}
+.tooltip_btn_left:hover{
+  cursor: pointer;
+  /* transform: translate(3px, 2px); */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Right Button */
+.tooltip_right{
+  text-align: center;
+  position: absolute;
+  right: 20%;
+  top: 25%;
+  border: 3px solid blue;
+  visibility: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.tooltip_right.active{
+  visibility: visible;
+}
+.tooltip_btn_right{
+  text-align: center;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+  color: black;
+  background-color: aqua;
+  background-image: linear-gradient(to right, skyblue, lightgreen, yellow);
+  outline: none;
+  border: none;
+  border-bottom: 2px dashed black;
+}
+.tooltip_btn_right:hover{
+  cursor: pointer;
+  /* transform: translate(3px, 2px); */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Bottom Button */
+.tooltip_bottom{
+  text-align: center;
+  position: absolute;
+  right: 45%;
+  top: 45%;
+  border: 3px solid blue;
+  visibility: hidden;
+}
+
+.tooltip_bottom.active{
+  visibility: visible;
+}
+.tooltip_btn_bottom{
+  text-align: center;
+  position: absolute;
+  right: 45%;
+  top: 50%;
+  color: black;
+  background-color: aqua;
+  background-image: linear-gradient(to right, skyblue, lightgreen, yellow);
+  outline: none;
+  border: none;
+  border-bottom: 2px dashed black;
+}
+.tooltip_btn_bottom:hover{
+  cursor: pointer;
+  /* transform: translate(3px, 2px); */
 }
